@@ -1,0 +1,16 @@
+import mapa-obj.mapa.Mapa
+import mapa-obj.mapa.Terreno
+
+program granja{
+    const mapa = new Mapa()
+    const terreno = new Terreno()
+
+    mapa.anchoMapa()
+    mapa.altoMapa()
+    mapa.celda()
+    terreno.terreno()
+    
+
+
+    game.start()
+}

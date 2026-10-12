@@ -1,15 +1,23 @@
 import mapa-obj.mapa.Mapa
 import mapa-obj.mapa.Terreno
 
+object personaje {
+  var property position = game.center()
+
+  method image() = "granjero.png"
+}
+
 program granja{
     const mapa = new Mapa()
     const terreno = new Terreno()
+
 
     mapa.anchoMapa()
     mapa.altoMapa()
     mapa.celda()
     terreno.terreno()
-    
+    game.addVisual(personaje)
+   
 
 
     game.start()

@@ -1,6 +1,6 @@
 class Mapa{
-    var property ancho = 60
-    var property alto = 30
+    var property ancho = 25
+    var property alto = 15
 
     method anchoMapa(){
          game.width(ancho)
@@ -11,13 +11,13 @@ class Mapa{
     }
 
     method celda (){
-        game.cellSize(32)
+        game.cellSize(64)
     }
 
 }
 
 class Terreno inherits Mapa{
     method terreno(){
-        game.boardGround("mapa-fondo.png")
+        game.boardGround("corral.png")
     }
 }
